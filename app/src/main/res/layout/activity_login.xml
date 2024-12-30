@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="?attr/colorOnPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginpages.login">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarLayoutLogin"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbarLogin"
+            app:title="Chat App"
+            app:subtitle="Login to Chat"
+            app:titleTextColor="?attr/colorOnPrimary"
+            app:subtitleTextColor="?attr/colorOnPrimary" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/appbarLayoutLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/baseline_message_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="?attr/colorPrimary"
+            app:hintTextColor="?attr/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:textColorHint="?attr/colorPrimary"
+                android:textColor="?attr/colorPrimary"
+                android:id="@+id/editEmaillogin"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            app:boxStrokeColor="?attr/colorPrimary"
+            app:hintTextColor="?attr/colorPrimary"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPasswordlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="?attr/colorPrimary"
+                android:textColorHint="?attr/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Login"
+            android:textColor="?attr/colorOnPrimary"
+            android:id="@+id/buttonLogin"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:id="@+id/textviewsignup"
+            android:text="@string/account"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signup"
+            android:textColor="?attr/colorOnPrimary"
+            android:id="@+id/buttonLogSignup"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

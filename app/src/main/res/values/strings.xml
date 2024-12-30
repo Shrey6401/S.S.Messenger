@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">S.S.Messenger</string>
+    <string name="account">Don\'t you have any account yet?<font color="#FFE91E63"></font> </string>
+
+</resources>

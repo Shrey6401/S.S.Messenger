@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "753670436185",
+    "project_id": "chat-messenger-96865",
+    "storage_bucket": "chat-messenger-96865.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753670436185:android:5dbd6e42d4a91b97680848",
+        "android_client_info": {
+          "package_name": "com.example.ssmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-ivPZvfpd8Nsrps1-74ozPbCXgqnUaYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
